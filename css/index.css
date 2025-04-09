@@ -1,0 +1,82 @@
+/*For index.html*/
+
+
+section#intro {
+    min-height: 500px;
+}
+
+section#intro .introContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.introContainer>.introItems {
+    width: 50%;
+}
+
+.introContainer>.introItems>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introContainer>.introItems2 {
+    margin-right: 50pt;
+    overflow: wrap;
+}
+
+.introContainer2 #bio {
+    text-align: center;
+    padding: 20pt;
+}
+
+section#backstory {
+    min-height: 400px;
+    padding: 20pt 50pt;
+}
+
+section#backstory ul {
+    list-style: square;
+}
+
+section#backstory ul,
+section#backstory ol {
+    padding-left: 50pt;
+    line-height: 26px;
+}
+
+section#connect {
+    text-align: center;
+    padding: 0 20%;
+}
+
+section#connect h2 a,
+section#connect h2 a span {
+    font-size: 25pt;
+    text-decoration: none;
+    font-style: normal;
+}
+
+section#connect h2 a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+section#connect h2 a span:hover {
+    color: var(--violet-light);
+}
+
+div.two-cols {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div.col {
+    padding:10pt;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}

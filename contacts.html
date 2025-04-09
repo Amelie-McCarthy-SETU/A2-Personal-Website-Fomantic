@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Contacts</title>
+
+    <!-- Page Specific Styling -->
+    <style>
+        section#contactIntro {
+            text-align: center;
+        }
+        section#contactIntro #arrows {
+            padding: 20pt 0;
+        }
+        section#contactContents {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section#contactContents h3 {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            <ul id="navLinks">
+                <li><a href="/index.html#backstory">About Me</a></li>
+                <li class="dropdown">
+                    <a href="/interests.html" class="dropdownBtn">My Interests</a>
+                    <ul class="dropdownContent">
+                        <li class="dropdownItem"><a href="/tech.html">Tech</a></li>
+                        <li class="dropdownItem"><a href="/art.html">Art</a></li>
+                        <li class="dropdownItem"><a href="/photo.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contactIntro">
+            <h1>Contact Me!</h1>
+            <div id="arrows">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+            </div>
+        </section>
+        <section id="contactContents">
+            <table>
+                <caption>Table of Contact Info</caption>
+                <thead>
+                    <tr>
+                        <th>Contact type</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:20111606@mail.wit.ie">20111606@mail.wit.ie</a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number</td>
+                        <td><a href="tel:+353000000000">+353 00 000 0000</a></td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td><a href="https://www.linkedin.com/in/am%C3%A9lie-mccarthy">LinkedIn.com/in/amélie-mccarthy</a></td>
+                    </tr>
+                    <tr>
+                        <td>Github</td>
+                        <td><a href="https://github.com/Amelie-McCarthy-SETU">GitHub.com/Amelie-McCarthy-SETU</a></td>
+                    </tr>
+                    <tr>
+                        <td>Behance</td>
+                        <td><a href="https://www.behance.net/amelie_mccarthy">Behance.net/amelie_mccarthy</a></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <h3>Thank you for your interest!</h3>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Amélie McCarthy, March 2025</p>
+        <h3>Hosted using Netlify</h3>
+    </footer>
+</body>
+
+</html>

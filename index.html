@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Web Dev Assignment 1</title>
+
+    <!-- Page Specific Styling -->
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            <ul id="navLinks">
+                <li><a href="/index.html#backstory">About Me</a></li>
+                <li class="dropdown">
+                    <a href="/interests.html" class="dropdownBtn">My Interests</a>
+                    <ul class="dropdownContent">
+                        <li class="dropdownItem"><a href="/tech.html">Tech</a></li>
+                        <li class="dropdownItem"><a href="/art.html">Art</a></li>
+                        <li class="dropdownItem"><a href="/photo.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="introContainer">
+                <div class="introItems">
+                    <figure>
+                        <img src="/images/profile.png" alt="Image of me" class="profilePic">
+                        <figcaption>This is me!</figcaption>
+                    </figure>
+                </div>
+                <div class="introItems introItems2 fancyBorderContainer">
+                    <div class="fancyBorderContent">
+                        <h1 class="introText">Hi, I'm Amélie McCarthy</h1> <br>
+                        <h3 class="introDesc">Student @ SETU, studying BSc (Hons) in Creative Computing</h3> <hr> <br>
+                        <p>I am an aspiring software developer with a range of skills in several STEAM areas!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="introContainer2">
+                <p id="bio">This is my personal website. Here you will find everything about me and my interests!</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="backstory">
+            <h1>My Story</h1> <br>
+            <ul>
+                <li>
+                    <p>Began coding in 2018, using HTML, CSS, and then later Python.</p>
+                </li>
+                <li>
+                    <p>Studied Graphic Design at Dungarvan College in 2024.</p>
+                </li>
+                <li>
+                    <p>Currently studying Creative Computing in SETU.</p>
+                </li>
+                <li>
+                    <p>Started creating a personal portfolio website in 2025.</p>
+                </li>
+            </ul> <br>
+            <p>Despite having a strong background in art and design, I have also been working towards a career in STEM,
+                particularly software development. This website will showcase all my projects for each interest as you
+                can see on the <a href="interests.html">Interests</a> page!</p>
+            <p>I love exploring the areas where technology and creativity overlap, and creating and documenting my
+                projects!</p> <br>
+            <div class="two-cols">
+                <div class="col">
+                    <h3>My Skills</h2>
+                        <ol>
+                            <li>Programming in HTML, CSS, JavaScript, and Python!</li>
+                            <li>Drawing and painting</li>
+                            <li>Designing graphics on Adobe InDesign</li>
+                            <li>Taking photos</li>
+                            <li>Building and repairing PCs</li>
+                            <li>Designing websites on Figma</li>
+                        </ol>
+                </div>
+                <div class="col">
+                    <h3>My Hobbies</h2>
+                        <ol>
+                            <li>Web development and designing webpages</li>
+                            <li>Gaming</li>
+                            <li>Art, Crafts & Design</li>
+                            <li>Taking photos</li>
+                            <li>Online browsing</li>
+                            <li>Going for walks</li>
+                        </ol>
+                </div>
+            </div>
+            <br>
+            <div class="quoteOfTheDay">
+                <h2>Quote of the Day:</h2>
+                <blockquote><q>The art challenges the technology, and the technology inspires the art.</q> - John Lasseter</blockquote>
+            </div>
+            <br>
+        </section>
+
+        <section id="connect">
+            <div class="fancyBorderContainer">
+                <div class="fancyBorderContent">
+                    <h2><a href="/contacts.html">Want to <span>connect</span>?</a></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Amélie McCarthy, March 2025</p>
+        <h3>Hosted using Netlify</h3>
+    </footer>
+</body>
+
+</html>

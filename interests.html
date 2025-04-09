@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Interests</title>
+
+    <!-- Page Specific Styling -->
+    <style>
+        main h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        main h3 {
+            text-align: center;
+        }
+
+        section#interestLinks {
+            width: 50%;
+            margin: auto;
+        }
+
+        section#interestLinks div {
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        section#interestLinks div.fancyBorderContainer:hover {
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+
+        section#interestLinks div h2 a {
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        section#interestLinks div h2 a span:hover {
+            color: var(--violet-light)
+        }
+        blockquote {
+            text-align: center;
+            background-color: var(--main-bg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            <ul id="navLinks">
+                <li><a href="/index.html#backstory">About Me</a></li>
+                <li class="dropdown">
+                    <a href="/interests.html" class="dropdownBtn">My Interests</a>
+                    <ul class="dropdownContent">
+                        <li class="dropdownItem"><a href="/tech.html">Tech</a></li>
+                        <li class="dropdownItem"><a href="/art.html">Art</a></li>
+                        <li class="dropdownItem"><a href="/photo.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Interests</h1>
+        <h3>See below for the links to pages describing my interests and the stuff I've learned in my free time!</h3> <br> <br>
+        <blockquote><q>Intellectual growth should commence at birth and cease only at death.</q> - Albert Einstein</blockquote> <br> <br>
+        <hr> <br>
+
+        <section id="interestLinks">
+
+            <div class="fancyBorderContainer">
+                <div class="fancyBorderContent">
+                    <h2><a href="/tech.html"><span>Tech</span></a></h2>
+                </div>
+            </div>
+            <br>
+            <div class="fancyBorderContainer">
+                <div class="fancyBorderContent">
+                    <h2><a href="/art.html"><span>Art</span></a></h2>
+                </div>
+            </div>
+            <br>
+            <div class="fancyBorderContainer">
+                <div class="fancyBorderContent">
+                    <h2><a href="/photo.html"><span>Photography</span></a></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Amélie McCarthy, March 2025</p>
+        <h3>Hosted using Netlify</h3>
+    </footer>
+</body>
+
+</html>

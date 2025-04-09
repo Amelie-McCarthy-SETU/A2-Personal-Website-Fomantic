@@ -1,0 +1,73 @@
+/*For photo.html*/
+
+
+/*OVERRIDE FROM STYLE.CSS */
+footer {
+    background-color: var(--shadow);
+}
+
+footer p,
+footer h3 {
+    color: var(--main-bg);
+}
+
+main {
+    margin: 20px 80px;
+    min-height: 200px;
+}
+
+
+
+/*CUSTOM PAGE STYLES*/
+section#photoIntro {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+}
+
+section#photoIntro h1 {
+    font-size: 60pt;
+    letter-spacing: 15px;
+    margin: 40px 0;
+}
+
+section#photoInfo {
+    width: auto;
+    margin: 30px 10pt;
+}
+
+section#photoContainer {
+    width:70%;
+    margin: auto;
+    background: var(--main-bg);
+    border-radius: 15pt;
+    box-shadow: 2px 2px 6px var(--shadow);
+    padding: 40pt 100px;
+}
+
+section#photoContainer figure {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-bottom: 20pt;
+    margin-bottom: 10pt;
+    border-bottom: 3px dashed var(--text-color)
+}
+
+section#photoContainer figure img {
+    width: 100%;
+    height: auto;
+}
+
+section#photoContainer figure figcaption {
+    font-size: 20px;
+    padding-left:20pt;
+    padding-top:20pt;
+}
+
+section#photoContainer table {
+    margin: auto;
+    width: 80%;
+}

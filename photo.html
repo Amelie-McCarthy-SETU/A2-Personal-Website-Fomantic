@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <title>Photography</title>
+
+    <!-- Page Specific Styling -->
+     <link rel="stylesheet" href="/css/photo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            <ul id="navLinks">
+                <li><a href="/index.html#backstory">About Me</a></li>
+                <li class="dropdown">
+                    <a href="/interests.html" class="dropdownBtn">My Interests</a>
+                    <ul class="dropdownContent">
+                        <li class="dropdownItem"><a href="/tech.html">Tech</a></li>
+                        <li class="dropdownItem"><a href="/art.html">Art</a></li>
+                        <li class="dropdownItem"><a href="/photo.html">Photography</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="photoIntro">
+            <h1>Photography</h1>
+            <div id="arrows">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+                <img src="images/down-arrows-img.png" alt="Downward Arrow Icon">
+            </div>
+        </section>
+        <section id="photoInfo" class="fancyBorderContainer">
+            <div class="fancyBorderContent" style="background-color: var(--main-bg);">
+                <h2>Info</h2>
+                <p>This is a gallery of my favourite photos I have taken in the past couple years.</p>
+            </div>
+        </section>
+
+        <section id="photoContainer">
+            <figure>
+                <img src="/images/photo-edit (1).png" alt="Amethyst crystal">
+                <figcaption>Image 1: Close-Up of an Amethyst Crystal</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/photo-edit (2).jpg" alt="3D-printed dragon in red">
+                <figcaption>Image 2: Close-Up of a 3D-Printed Dragon in Red Light</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/photo-edit (1).jpg" alt="Ruined house photo">
+                <figcaption>Image 3: Photo of a Ruin</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/photo-edit (2).png" alt="Beach pebbles">
+                <figcaption>Image 4: Photo of Rocks on a Beach</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/photo-edit (3).jpg" alt="Blue seashell">
+                <figcaption>Image 5: Experimental Photo of a Seashell</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/photo-edit (4).jpg" alt="photo">
+                <figcaption>Image 6: Close-Up through an Interesting Glass Lens</figcaption>
+            </figure>
+
+            <h2>Information on these photos</h2> <br>
+            <table>
+                <thead>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Format</th>
+                    <th>Photography Tools</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Image 1</td>
+                        <td>Close-Up of an Amethyst Crystal</td>
+                        <td>PNG</td>
+                        <td rowspan="6">Phone Photography</td>
+                    </tr>
+                    <tr>
+                        <td>Image 2</td>
+                        <td>Close-Up of a 3D-Printed Dragon in Red Light</td>
+                        <td rowspan="2">JPG</td>
+                    </tr>
+                    <tr>
+                        <td>Image 3</td>
+                        <td>Photo of a Ruin</td>
+                    </tr>
+                    <tr>
+                        <td>Image 4</td>
+                        <td>Photo of Rocks on a Beach</td>
+                        <td>PNG</td>
+                    </tr>
+                    <tr>
+                        <td>Image 5</td>
+                        <td>Experimental Photo of a Seashell</td>
+                        <td rowspan="2">JPG</td>
+                    </tr>
+                    <tr>
+                        <td>Image 6</td>
+                        <td>Close-Up through an Interesting Glass Lens</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Amélie McCarthy, March 2025</p>
+        <h3>Hosted using Netlify</h3>
+    </footer>
+</body>
+
+</html>

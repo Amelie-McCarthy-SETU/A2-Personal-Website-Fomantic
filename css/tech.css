@@ -1,0 +1,174 @@
+/*For tech.html*/
+
+
+/*OVERRIDE FROM STYLE.CSS */
+body {
+    background: linear-gradient(to bottom, var(--cyan), var(--violet-light), var(--shadow2));
+}
+
+footer {
+    background-color: var(--shadow2);
+}
+
+footer p,
+footer h3 {
+    color: var(--main-bg);
+}
+
+main {
+    margin: 20px 80px;
+    background: var(--shadow);
+    border-radius: 15pt;
+    box-shadow: 4px 4px 10px -3px var(--shadow2);
+    min-height: 200px;
+}
+
+main p, main h1, main h2, main h3 {
+    color: var(--main-bg);
+}
+
+hr {
+    border-color: var(--violet-light);
+    border-width: 2px;
+}
+
+.fancyBorderContainer {
+    margin: 40px auto 40px auto;
+    width:70%;
+}
+
+.fancyBorderContent {
+    background-color: var(--shadow2);
+    text-align: center;
+}
+.fancyBorderContent h3, .fancyBorderContent a {
+    color: var(--main-bg);
+    text-decoration: none;
+}
+.fancyBorderContent h3, .fancyBorderContent a span:hover {
+    color: var(--violet-light);
+}
+
+
+/*CUSTOM PAGE STYLES*/
+section#techIntro {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+}
+
+section#techIntro h1 {
+    font-size: 150px;
+    letter-spacing: 15px;
+    margin: 40px 0;
+}
+
+section#techProjects h2, section#techSkills h2 {
+    padding-left:20pt;
+}
+section#techSkills h3 {
+    padding: 10pt 0 10pt 60pt;
+}
+
+.projectContainer {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainer .projectItem {
+    background: linear-gradient(to right, var(--shadow), var(--shadow2));
+    border: 2px solid var(--cyan);
+    border-radius: 10pt;
+    margin:10px 0;
+    padding:10pt;
+    width:60%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition:0.2s;
+}
+
+.projectContainer .projectItem:hover {
+    transform: scale(1.05);
+    transition:0.2s;
+}
+
+.projectContainer .projectItem .projectItemText {
+    flex:70%;
+    padding-left: 20px;
+}
+.projectContainer .projectItem .projectItemText h3 {
+    font-size: 28pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.projectContainer .projectItem .projectItemText h3 span {
+    font-size: 20pt;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--cyan);
+}
+.projectContainer .projectItem .projectItemText p {
+    font-weight: 300;
+}
+.projectContainer .projectItem .projectItemText p.projectItemDate {
+    padding-top: 10pt;
+    border-top: 1px solid var(--cyan);
+    font-size:15px;
+    opacity: 80%;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.projectContainer .projectItem .projectItemText p.projectItemLink a {
+    padding-top: 10pt;
+    font-style: italic;
+    color: var(--cyan);
+}
+.projectContainer .projectItem .projectItemText p.projectItemLink a:visited {
+    opacity: 50%;
+}
+
+.projectContainer .projectItem .projectItemText p.projectItemLink a:hover {
+    color: var(--violet-light);
+    cursor:help;
+}
+
+
+.projectContainer .projectItem .projectItemImg {
+    flex:30%;
+}
+.projectContainer .projectItem .projectItemImg>figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.projectContainer .projectItem .projectItemImg>figure>img {
+    width:80%;
+    height:auto;
+}
+
+.projectContainer .projectItem .projectItemImg>figure>figcaption {
+    width:80%;
+    color: var(--cyan);
+}
+
+div#techLang dl, div#techSoftware dl {
+    padding: 0 100pt;
+}
+dl > dt, dl > dd {
+    color: var(--main-bg);
+}
+dl > dt {
+    color: var(--cyan-pastel);
+    font-weight: bold;
+}
+dl > dd {
+    margin-left: 20pt;
+}

@@ -1,0 +1,100 @@
+/*For art.html*/
+
+
+/*OVERRIDE FROM STYLE.CSS */
+body {
+    background-image: url('/images/art-bg.jpg') !important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: var(--shadow);
+}
+
+footer p,
+footer h3 {
+    color: var(--main-bg);
+}
+
+main {
+    margin: 20px 80px;
+    background: var(--main-bg);
+    border-radius: 15pt;
+    box-shadow: 2px 2px 6px var(--shadow);
+    min-height: 200px;
+}
+
+
+/*CUSTOM PAGE STYLES*/
+section#artIntro {
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+}
+
+section#artIntro h1 {
+    font-size: 150px;
+    letter-spacing: 15px;
+    margin: 40px 0;
+    background: url('/images/art-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Below is inspired from: https://www.frontendhero.dev/tutorial/mask-text-with-image/ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section#artInfo {
+    width: auto;
+    margin: 30px 10pt;
+}
+
+section#artContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section#artContainer .artItems {
+    flex-basis: 300px;
+    box-shadow: 2px 2px 6px var(--shadow);
+    border-radius: 10pt;
+    margin: 20pt 10pt;
+    transition: 0.2s;
+}
+
+section#artContainer .artItems:hover {
+    z-index: 10;
+    transform: scale(1.25);
+    transition: 0.2s;
+    background-color: var(--main-bg);
+    box-shadow: 2px 2px 12px var(--shadow);
+}
+
+section#artContainer .artItems img {
+    width: 100%;
+    border-radius: 10pt 10pt 0 0;
+    height: auto;
+}
+
+section#artContainer .artItems p {
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+section#artContainer .artItems h2 {
+    font-size: 20pt;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+section#artContainer .artItems p,
+section#artContainer .artItems h2 {
+    padding-left: 20px;
+}
