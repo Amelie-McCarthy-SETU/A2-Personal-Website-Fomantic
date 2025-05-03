@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Web Dev Assignment 2</title>
+
+    <!-- You MUST include jQuery 3.4+ before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="ui sticky menu">
+            <div class="item">
+                <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            </div>
+            <div class="right menu">
+                <a class="item" href="/index.html#backstory">About Me</a>
+                <div class="ui simple dropdown item">
+                    <span class="text">My Interests</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="/interests.html"><b>Home</b></a>
+                        <div class="divider"></div>
+                        <a class="item" href="/art.html">Art</a>
+                        <a class="item" href="/tech.html">Tech</a>
+                        <a class="item" href="/photo.html">Photography</a>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    <span class="text">Collections</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="/gems.html">Gemstones</a>
+                        <a class="active item" href="/bic.html">BIC Pens</a>
+                    </div>
+                </div>
+                <a class="item" href="/contacts.html">Contacts</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ui grid container">
+        <div class="sixteen wide column"></div>
+        <section class="ui row">
+            <div class="ten wide column">
+                <h1>Welcome to my Bic pen collection page!</h1>
+                <p><b>Bic</b> is a French manufacturing corporation based in Clichy, Hauts-de-Seine. It was founded in
+                    1945 by French aristocrat Marcel Bich and produces specifically disposable items; namely pens,
+                    stationery, lighters, and shaving razors.
+                    <br>On this page, I showcase some of my collection of the special edition pens released by this
+                    company.
+                </p>
+            </div>
+            <div class="six wide column">
+                <img src="/images/bic.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="sixteen wide column">
+            <br>
+            <hr>
+        </div>
+
+        <section class="ui sixteen wide column grid">
+            <h2>My Top 5 Pen Designs</h2>
+            <div class="ui centered one wide cards grid">
+                <div class="centered card grid stackable row heightOverride">
+                    <div class="ui eleven wide column">
+                        <div class="center aligned image">
+                            <img src="/images/bic1.png">
+                        </div>
+                    </div>
+                    <div class="ui five wide column card">
+                        <div class="content">
+                            <div class="header">Black Business Pen</div>
+                            <div class="meta">
+                                <a>Series 1</a>
+                            </div>
+                            <div class="description">
+                                A sleek dark pen design with a unique orange accent band.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated">
+                                Collected: May 2019
+                            </span>
+                            <span>
+                                3.8
+                                <i class="star icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centered card grid stackable row heightOverride">
+                    <div class="ui eleven wide column">
+                        <div class="center aligned image">
+                            <img src="/images/bic2.png">
+                        </div>
+                    </div>
+                    <div class="ui five wide column card">
+                        <div class="content">
+                            <div class="header">Yellow Sun Limited Edition Pen</div>
+                            <div class="meta">
+                                <a>Series 4</a>
+                            </div>
+                            <div class="description">
+                                A simple pen with an exclusive orange ink.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated">
+                                Collected: December 2021
+                            </span>
+                            <span>
+                                4.5<i class="star icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centered card grid stackable row heightOverride">
+                    <div class="ui eleven wide column">
+                        <div class="center aligned image">
+                            <img src="/images/bic3.png">
+                        </div>
+                    </div>
+                    <div class="ui five wide column card">
+                        <div class="content">
+                            <div class="header">Neon Limited Edition Pen</div>
+                            <div class="meta">
+                                <a>Series 6</a>
+                            </div>
+                            <div class="description">
+                                A transparent pen with an exclusive highlighter ink.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated">
+                                Collected: October 2021
+                            </span>
+                            <span>
+                                4.2<i class="star icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centered card grid stackable row heightOverride">
+                    <div class="ui eleven wide column">
+                        <div class="center aligned image">
+                            <img src="/images/bic4.png">
+                        </div>
+                    </div>
+                    <div class="ui five wide column card">
+                        <div class="content">
+                            <div class="header">Rare Purple Grip Pen</div>
+                            <div class="meta">
+                                <a>Series 3</a>
+                            </div>
+                            <div class="description">
+                                A purple edition of the classic blue grip pen.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated">
+                                Collected: January 2023
+                            </span>
+                            <span>
+                                5<i class="star icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centered card grid stackable row heightOverride">
+                    <div class="ui eleven wide column">
+                        <div class="center aligned image">
+                            <img src="/images/bic5.png">
+                        </div>
+                    </div>
+                    <div class="ui five wide column card">
+                        <div class="content">
+                            <div class="header">Shiny Pen Series</div>
+                            <div class="meta">
+                                <a>Series 7</a>
+                            </div>
+                            <div class="description">
+                                Six versions of this shiny finish, including blue, purple, gold, silver, pink and red.
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <span class="right floated">
+                                Collected: March 2024
+                            </span>
+                            <span>
+                                3.9<i class="star icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sixteen wide column">
+            <br>
+            <h2>More on the history of Bic... <br><small>Here below...</small></h2>
+        </div>
+
+        <section class="ui two column stackable row">
+            <div class="ui column">
+                <p>In 1942, Marcel Bich and his partner, Édouard Buffard, set up a business creating writing instrument
+                    parts in a factory in the Paris suburb of Clichy, where they began production of pen holders and
+                    pencil cases. Marcel Bich bought the patent for the ballpoint pen from Hungarian – Argentine
+                    inventor László Bíró, and using Swiss watchmaking tools, he devised a manufacturing process that
+                    produced stainless-steel balls for the tip of the pen.</p>
+            </div>
+            <div class="ui column">
+                <p>Bich soon perfected the design of the ballpoint pen, and the Bic Cristal ballpoint pen became the
+                    company's first product in 1950. The Bic Cristal has sold over one hundred billion units since its
+                    launch in 1950. Bich formed Société Bic in 1953, and the company was listed on the Paris Stock
+                    Exchange in 1972. The design of the pen has remained mostly unchanged since its initial launch, and
+                    as of 2021, remains the best-selling pen in the world.</p>
+            </div>
+        </section>
+        <section class="ui three column stackable row">
+            <div class="ui column">
+                <p>Between 1950 and the 1970s, BIC expanded globally into Italy, the Netherlands, Austria, Switzerland,
+                    and Spain. In 1956, the company established itself in Brazil, and soon after expanded into the
+                    United Kingdom, Australia, New Zealand, and Scandinavia in 1957. After acquiring the patent to
+                    ballpoint pens, Bic launched its first product, the Bic Cristal Pen. Bic has made many attempts to
+                    piggyback off its old success and make better ballpoints, but the Cristal remains the most
+                    successful.</p>
+            </div>
+            <div class="ui stacked segment column">
+                <blockquote>
+                    <span class="ui huge grey text"><q>If it ain't broke, don't fix it</q></span>
+                    <span class="ui big grey text">— Marcel Bich, c. 1950</span>
+                </blockquote>
+            </div>
+            <div class="ui column">
+                <p>On November 20, 1962, BIC launched a range of three luxury ballpoint pens: Chrome, Luxury, and Grand
+                    Luxury. In 1969, Bic launched its advertising campaign in the United States. A year later, the
+                    four-color Bic was launched. The four-color pen allowed one to change the ink color without changing
+                    the pen. Bic's ability to mass produce the manufacturing of their pens resulted in low prices.</p>
+            </div>
+        </section>
+        <p><span class="ui small grey text">Source: <a href="https://en.wikipedia.org/wiki/Bic_(company)">Bic (company) - Wikipedia</a></span></p>
+
+        <div class="sixteen wide column"></div>
+
+
+        <section class="ui grid">
+            <h2>Recent Collectable Pen Releases <br><small>(2024-2025)</small></h2>
+            <div class="ui grid row" id="tableHeight">
+                <table class="ui selectable celled structured table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Name</th>
+                            <th rowspan="2">Type</th>
+                            <th rowspan="2">Rating</th>
+                            <th colspan="3">Available in regions:</th>
+                        </tr>
+                        <tr>
+                            <th>EU</th>
+                            <th>US</th>
+                            <th>Asia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Matte Finish Shiny (6 variants)</td>
+                            <td>4-colour</td>
+                            <td class="right aligned">
+                                3.5 <i class="star icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td></td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Wooden Pen (3 variants)</td>
+                            <td>Plain, 4-colour</td>
+                            <td class="right aligned">
+                                4 <i class="star icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Blue, 4-colour</td>
+                            <td class="right aligned">
+                                5 <i class="star icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>White, 4-colour</td>
+                            <td class="right aligned">
+                                4.5 <i class="star icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td></td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Paris 2025</td>
+                            <td>4-colour</td>
+                            <td class="right aligned">
+                                3 <i class="star icon"></i>
+                            </td>
+                            <td class="center aligned">
+                                <i class="large green checkmark icon"></i>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="ui sixteen wide column">
+        <p><span class="ui medium text">Made by Amélie McCarthy, March 2025</span></p>
+        <p><span class="ui large text"><b>Hosted using Netlify</b></span></p>
+    </footer>
+</body>
+
+</html>

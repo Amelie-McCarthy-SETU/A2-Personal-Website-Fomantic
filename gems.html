@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Notable&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Web Dev Assignment 2</title>
+
+    <!-- You MUST include jQuery 3.4+ before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="ui sticky menu">
+            <div class="item">
+                <p id="myName"><a href="/index.html">Amélie McCarthy</a></p>
+            </div>
+            <div class="right menu">
+                <a class="item" href="/index.html#backstory">About Me</a>
+                <div class="ui simple dropdown item">
+                    <span class="text">My Interests</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="/interests.html"><b>Home</b></a>
+                        <div class="divider"></div>
+                        <a class="item" href="/art.html">Art</a>
+                        <a class="item" href="/tech.html">Tech</a>
+                        <a class="item" href="/photo.html">Photography</a>
+                    </div>
+                </div>
+                <div class="ui simple dropdown item">
+                    <span class="text">Collections</span>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="active item" href="/gems.html">Gemstones</a>
+                        <a class="item" href="/bic.html">BIC Pens</a>
+                    </div>
+                </div>
+                <a class="item" href="/contacts.html">Contacts</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="ui grid container">
+        <div class="sixteen wide column"></div>
+
+        <div class="ui sixteen wide row">
+            <img src="/images/gem-banner.png" alt="" class="ui fluid rounded image" height="200px">
+        </div>
+
+        <div class="ui sixteen wide row"></div>
+
+        <section class="ui row">
+            <div class="ten wide column">
+                <h1>Welcome to my gemstone collection!</h1>
+                <p>Here is where I document my current collection of precious gems and minerals, their chemical composition, and some notes on my findings!
+                    Currently I have over 100 samples in my collection, found near me, bought online or collected from rock shops.
+                    I also have a form below for telling me which of these gems is your favourite, and why!
+                    <br><span class="ui grey text">Please note I am <i>not</i> currently sell items from my collection.</span>
+                </p>
+                <button class="ui inverted purple button"><a href="#gemForm" class="gemLink">Tell me your favourite gem!</a></button>
+            </div>
+            <div class="six wide column">
+                <figure class="ui center aligned grid">
+                    <img class="ui circular image" src="/images/gem-intro.jpg" alt="" width="100%" height="auto">
+                    <figcaption><span class="ui grey text">Source: Unsplash</span></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="sixteen wide column">
+            <br>
+            <hr>
+        </div>
+
+        <h2 class="ui row">My Current Collection...</h2>
+        <section class="ui four stackable link cards">
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem1.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Amethyst</div>
+                    <div class="center aligned meta">SiO2</div>
+                    <div class="description">
+                        My favourite gem of a purple hue, of which I have over 20 samples.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem2.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Emerald</div>
+                    <div class="center aligned meta">Be3Al2(SiO3)6</div>
+                    <div class="description">
+                        I have one sample currently of this uncommon gem. It's use is mainly for jewellery and is expensive and hard to find.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem3.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Diamond</div>
+                    <div class="center aligned meta">C</div>
+                    <div class="description">
+                        The most expensive gemstone, which can be found naturally or produced in a lab at a lower cost. Made of pure carbon and extremely rare. I only own 1 rough piece.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem4.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Sapphire</div>
+                    <div class="center aligned meta">Al203</div>
+                    <div class="description">
+                        I have 4 samples of this bright blue mineral. It can be used in jewellery, and varies in colour from blue to red (rubies)!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem5.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Opal</div>
+                    <div class="center aligned meta">SiO2 · nH2O</div>
+                    <div class="description">
+                        A very unique gem, known for its reflection of light into a trippy rainbow appearance. I own 2 samples, a natural piece and an artificial piece.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem6.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Quartz</div>
+                    <div class="center aligned meta">SiO2</div>
+                    <div class="description">
+                        The most common and inexpensive gem, and can be found all over the world. I have many samples from near me and abroad. Can come in many colours.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem1.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Fluorite (purple)</div>
+                    <div class="center aligned meta">CaF2</div>
+                    <div class="description">
+                        Comes in a range of colours, from purple to green based on chemical composition. I have 5 natural samples of the purple variant from France. These fade easily in sunlight.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img src="/images/gem2.png" alt="" class="ui centered small rounded image imageThumbnail">
+                    <br><br>
+
+                    <div class="center aligned header">Fluorite (green)</div>
+                    <div class="center aligned meta">CaF2</div>
+                    <div class="description">
+                        Comes in a range of colours, from purple to green based on chemical composition. The most common fluorite samples I own are green.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="sixteen wide column"></div>
+
+        <section class="ui grid">
+            <div class="ui twelve wide column">
+                <p>A gemstone (also called a fine gem, jewel, precious stone, semiprecious stone, or simply gem) is a piece of mineral crystal which, when cut or polished, is used to make jewelry or other adornments. Certain rocks (such as lapis lazuli, opal, and obsidian) and occasionally organic materials that are not minerals (such as amber, jet, and pearl) may also be used for jewelry and are therefore often considered to be gemstones as well. Most gemstones are hard, but some softer minerals such as brazilianite may be used in jewelry because of their color or luster or other physical properties that have aesthetic value. However, generally speaking, soft minerals are not typically used as gemstones by virtue of their brittleness and lack of durability.</p>
+                <p>Found all over the world, the industry of coloured gemstones (i.e. anything other than diamonds) is currently estimated at US$1.55 billion as of 2023 and is projected to steadily increase to a value of $4.46 billion by 2033.
+                    A gem expert is a gemologist, a gem maker is called a lapidarist or gemcutter; a diamond cutter is called a diamantaire.</p>
+                <p><span class="ui small grey text">Source: <a href="https://en.wikipedia.org/wiki/Gemstone">Gemstone - Wikipedia</a></span></p>
+
+                </div>
+            <div class="ui four wide column">
+                <div class="ui segment">
+                    <img src="/images/gem-banner.png" alt="" class="ui rounded image">
+                    <hr>
+                    <span class="ui grey text">Gemstones are used for jewellery, decoration, spiritual reasons or in tools (such as diamond bit tools).</span>
+                </div>
+                <div class="ui center aligned segment">
+                    <i class="big heart outline icon" style="visibility: visible;" title="Like"></i>
+                    <i class="big comment icon" style="visibility: visible;" title="Comment"></i>
+                    <i class="big share alternate icon" style="visibility: visible;" title="Share"></i>
+                    <i class="big photo video icon" style="visibility: visible;" title="Photo gallery"></i>
+                    <i class="big store icon" style="visibility: visible;" title="Where to buy"></i>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="sixteen wide column">
+            <br>
+            <hr>
+        </div>
+
+        <section class="ui ten wide grid formGrid" id="gemForm">
+            <h2>Tell me your favourite gem!</h2>
+            <br>
+            <div class="ui form">
+                <div class="field">
+                    <label>Name</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="fields">
+                        <div class="twelve wide field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="example@site.com">
+                        </div>
+                        <div class="four wide field">
+                            <label>Age</label>
+                            <input type="number" name="age" min="0" max="120" step="1" placeholder="Age">
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Date</label>
+                    <div class="ui calendar">
+                        <div class="ui input left icon">
+                            <input type="text" placeholder="Pick up a date" name="date">
+                            <i class="calendar icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>What's your favourite gemstone?</label>
+                    <select class="ui fluid dropdown">
+                        <option value="" class="defaultOption">Gemstone...</option>
+                        <option value="0">Amethyst</option>
+                        <option value="1">Diamond</option>
+                        <option value="2">Sapphire</option>
+                        <option value="3">Emerald</option>
+                        <option value="4">Opal</option>
+                        <option value="5">Quartz</option>
+                        <option value="6">Fluorite</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Why?</label>
+                    <textarea></textarea>
+                </div>
+                <div class="field">
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" tabindex="0" class="hidden" id="terms">
+                        <label for="terms">I have read and agree to the terms & conditions.</label>
+                    </div>
+                </div>
+                <button type="submit" class="ui blue button">Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ui sixteen wide column">
+        <p><span class="ui medium text">Made by Amélie McCarthy, March 2025</span></p>
+        <p><span class="ui large text"><b>Hosted using Netlify</b></span></p>
+    </footer>
+</body>
+
+</html>

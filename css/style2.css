@@ -1,0 +1,95 @@
+:root {
+    /*Colour variables*/
+    --cyan: #65cdd5;
+    --cyan-pastel: #91ede9;
+    --cyan-pastel2:rgb(197, 255, 245);
+    --cyan-dark: #20999169;
+    --purple: #883ea7;
+    --purple-pastel: #b175ca;
+    --violet-light: #8991ee;
+    --main-bg: #fff;
+    --container-bg: #f3f3f3;
+    --container-shadow: #d9d9d9;
+    --text-color: #302f33;
+    --text-color-transparent: rgba(48, 47, 51, 0.8);
+    --shadow: rgba(47, 33, 62, 0.35);
+    --shadow2: #121724;
+
+
+}
+
+p {
+    color: var(--text-color);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14pt;
+}
+
+h1 {
+    font-family: 'Notable';
+    letter-spacing: 2pt;
+    font-size:36px;
+}
+
+/*Custom name styling in navbar*/
+#myName a {
+    text-decoration: none;
+    font-family: 'Ephesis', serif;
+    font-size:18pt;
+    color: var(--purple);
+}
+
+#myName a:hover {
+    color: var(--violet-light);
+    text-shadow: 2px 2px 6px var(--container-bg);
+}
+
+.ui.grid>.row {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.imageThumbnail {
+    display: block !important;
+}
+
+.formGrid {
+    display: block !important;
+    margin: auto !important;
+}
+
+.defaultOption {
+    color: var(grey);
+}
+
+footer {
+    display: block;
+    margin-top: 200px;
+    padding: 10px;
+    background-color: #302f3333;
+    text-align: center;
+}
+
+footer > p {
+    margin: 10px 0 !important;
+}
+
+section.ui.row, div#tableHeight {
+    max-height: none !important;
+    margin: 0 auto !important;
+}
+
+a.gemLink {
+    color: #B413EC !important;
+}
+
+button:hover > .gemLink {
+    color: white !important;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    div.heightOverride {
+        max-height: none !important;
+    }
+}
